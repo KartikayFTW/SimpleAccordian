@@ -18,6 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  cursor: pointer;
 }
 
 .item {
@@ -47,6 +48,7 @@ body {
 .hidden-box {
   grid-column: 2;
   display: none;
+  overflow: hidden;
 }
 
 .hidden-box p {
@@ -64,6 +66,8 @@ body {
 
 .open {
   border-top: 4px solid #087f5b;
+
+  background-color: #EFFFFD;
 }
 .open .hidden-box {
   display: block;
@@ -72,3 +76,5 @@ body {
 .open .text {
   color: #087f5b;
 }
+.item:hover {
+    background-color: #EFFFFD;
